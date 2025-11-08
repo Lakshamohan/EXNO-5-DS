@@ -1,3 +1,5 @@
+# NAME: LAKSHA.M
+# REGNO: 212224220050
 # EXNO-5-DS-DATA VISUALIZATION USING MATPLOT LIBRARY
 
 # Aim:
@@ -18,28 +20,143 @@ STEP 4:Apply the various data visualization tools wherever necessary.
 STEP 5:Include Necessary parameters in each functions.
 
 # Coding and Output:
-![Screenshot 2024-11-29 144129](https://github.com/user-attachments/assets/9234c06d-836e-4d79-a9a8-0b256271d83e)
-![Screenshot 2024-11-29 144141](https://github.com/user-attachments/assets/24700bb1-9e9b-4fec-a898-5f0cd2d98fce)
-![Screenshot 2024-11-29 144157](https://github.com/user-attachments/assets/664a20cf-29fd-4b0c-b977-824d538b4125)
-![Screenshot 2024-11-29 144213](https://github.com/user-attachments/assets/a3edf744-fc16-40a0-9a06-99140693ce45)
-![Screenshot 2024-11-29 144229](https://github.com/user-attachments/assets/8e4ee292-4f0e-4c06-91d4-243ef1f74393)
-![Screenshot 2024-11-29 144244](https://github.com/user-attachments/assets/5bc74d6e-b58b-489c-8bde-c436ee46a2dd)
-![Screenshot 2024-11-29 144258](https://github.com/user-attachments/assets/5286b863-5b55-4de0-85a3-adb77a3ac786)
-![Screenshot 2024-11-29 144320](https://github.com/user-attachments/assets/7594da41-b6c5-4dae-b964-d67ef78e8391)
-![Screenshot 2024-11-29 144351](https://github.com/user-attachments/assets/e9c2873e-542e-4ecd-92c8-13dac205b6f5)
-![Screenshot 2024-11-29 144403](https://github.com/user-attachments/assets/45405cf3-3af0-4cfd-b954-f8721cfd7134)
-![Screenshot 2024-11-29 144415](https://github.com/user-attachments/assets/6f205660-c5e4-4b4e-94ab-0ecba8813269)
-![Screenshot 2024-11-29 144426](https://github.com/user-attachments/assets/965c4e46-e8a0-4844-99e4-7f9e2ddb79a3)
-![Screenshot 2024-11-29 144441](https://github.com/user-attachments/assets/2993cfce-8028-4274-8ed2-72653087dc3d)
-![Screenshot 2024-11-29 144457](https://github.com/user-attachments/assets/d45de1a7-800d-4fcd-a6c1-019d182e6817)
-![Screenshot 2024-11-29 144517](https://github.com/user-attachments/assets/7a78acab-ea6b-4b97-9fe2-162b3d5c2735)
-![Screenshot 2024-11-29 144615](https://github.com/user-attachments/assets/10b4f373-508e-4001-a917-dc040db3c1ac)
-![Screenshot 2024-11-29 144629](https://github.com/user-attachments/assets/3c06ab55-c94e-4f48-b0eb-3162465fdb9e)
-![Screenshot 2024-11-29 144642](https://github.com/user-attachments/assets/205f50e1-0f64-4c5d-8c90-3e2e6b098edf)
-![Screenshot 2024-11-29 144654](https://github.com/user-attachments/assets/064afcce-dab0-41c7-8d17-7151959ccf24)
-![Screenshot 2024-11-29 144705](https://github.com/user-attachments/assets/98879c7c-62de-45ef-b47e-759a6d8f0847)
-![Screenshot 2024-11-29 144715](https://github.com/user-attachments/assets/67bab994-9788-4380-b902-40c755eab5ea)
-![Screenshot 2024-11-29 144736](https://github.com/user-attachments/assets/1f21e2e7-5620-4e76-9233-98856a65364a)
+
+```
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+```
+
+# LINE PLOT
+
+```
+marks=[13,45,63,78]
+ student=['ABC','QOR','EFB','TOB']
+ plt.plot(marks,student)
+ plt.xlabel('Marks')
+ plt.ylabel('Student name')
+ plt.show()
+ student=['A','B','C','D']
+ attendence=[90,85,73,88]
+ plt.plot(attendence,student)
+ plt.xlabel('Attendence')
+ plt.ylabel('Student name')
+ plt.show()
+```
+
+# OUTPUT
+<img width="778" height="815" alt="504607055-6018e45e-a3c1-4f54-903a-9b65757e181d" src="https://github.com/user-attachments/assets/17f28f46-f018-451a-a9f0-770820560d7e" />
+
+# SCATTER PLOT
+
+```
+ x=[10,20,30,40,50]
+ y=[100,200,300,400,500]
+ plt.scatter(x,y,label='stars',color='green',marker='*',s=30)
+ plt.show()
+ x=np.arange(0,15)
+ y=np.arange(0,15)
+ x
+ y
+ plt.scatter(x,y,c='r')
+ plt.xlabel('X axis')
+ plt.ylabel('y axis')
+ plt.title('Scatter plot')
+ plt.show()
+```
+
+# OUTPUT
+<img width="665" height="836" alt="504608206-939cf818-3363-48cc-a3a8-e072e4eae829" src="https://github.com/user-attachments/assets/cb6fa247-61aa-4d3c-bf9c-0fe5ddc1de28" />
+
+# PIE CHART
+
+```
+act=['eat','sleep','work','play']
+ slices=[3,7,8,6]
+ color=['r','y','g','b']
+ plt.pie(slices,labels=act,colors=color,startangle=90,shadow=True,explode=(0.1,0.1,0.1,0.1),radius=1.2,autopct='%1.1f%%')
+ plt.legend()
+ plt.show()
+ feedback=['Good','excellent','Perfect','Ok']
+ slices=[4,10,3,8]
+ color=['y','r','b','g']
+ plt.pie(slices,labels=feedback,colors=color,startangle=90,shadow=True,explode=(0.1,0.1,0.1,0.1),radius=1.2,autopct='%1.1f%%')
+ plt.legend()
+ plt.show()
+```
+
+# OUTPUT
+<img width="778" height="778" alt="504608827-7712f1de-44ac-42f9-9bab-a3908c7c2786" src="https://github.com/user-attachments/assets/a7f02e6e-1eed-4557-a3ad-536075ba5283" />
+
+# AREA CHART
+
+```
+ x = [1, 2, 3, 4, 5]
+ y1 = [10, 12, 14, 16, 18]
+ y2 = [5, 7, 9, 11, 13]
+ y3 = [2, 4, 6, 8, 10]
+ plt.fill_between(x, y1, color='blue')
+ plt.fill_between(x, y2, color='green')
+ plt.plot(x, y1, color='red')
+ plt.plot(x, y2, color='black')
+ plt.legend(['y1','y2'])
+ plt.show()
+```
+
+# OUTPUT
+<img width="694" height="463" alt="504609850-94355db8-128a-4d62-a047-02aa738c2cd5" src="https://github.com/user-attachments/assets/50637398-ac4a-438a-86fc-b08884277653" />
+
+# BAR CHART
+
+```
+height = [10, 24, 36, 40, 5]
+names = ['one', 'two', 'three', 'four', 'five']
+c1=['red', 'green'] 
+c2=['b', 'g']
+plt.bar (names, height, width=0.8, color=c1)
+plt.xlabel('x - axis')
+plt.ylabel('y - axis')
+plt.title('My bar chart!')
+plt.show()
+```
+
+# OUTPUT
+<img width="611" height="484" alt="504610978-ee1c1cb0-c425-498e-83bb-78ce5a5d6817" src="https://github.com/user-attachments/assets/d70bfa9f-148c-45ac-b3a9-1775d49fb436" />
+
+# HISTOGRAM
+
+```
+ x = [2,1,6,4,2,4,8,9,4,2,4,10,6,4,5,7,7,3,2,7,5,3,5,9,2,1]
+ plt.hist(x, bins = 10, color='blue')
+ plt.show()
+```
+
+# OUTPUT
+<img width="628" height="366" alt="504612148-ff93a1e2-21c2-4e79-833c-8dfcc59dd57f" src="https://github.com/user-attachments/assets/c13a316c-8864-46bf-bfb0-70532daaaef5" />
+
+# BOX PLOT
+
+```
+np.random.seed(0)
+data=np.random.normal(loc=0, scale=1, size=100)
+data
+```
+
+# OUTPUT
+<img width="653" height="316" alt="504612415-976d9bb0-ebcb-498c-b735-7e511311adaa" src="https://github.com/user-attachments/assets/b8dcf36d-d748-42a0-b019-f8b734e0c582" />
+
+```
+fig, ax= plt.subplots()
+ax.boxplot(data)
+ax.set_xlabel('Data')
+ax.set_ylabel('Values')
+ax.set_title('Box Plot')
+```
+
+# OUTPUT
+<img width="739" height="456" alt="504612891-674b1300-288a-44fe-944f-d1a71dce0f8a" src="https://github.com/user-attachments/assets/4676f4e7-39f3-4d6e-8dc3-35a5134aa3f3" />
+
 
 # Result:
 Thus,all the data visualization techniques of matplotlib has been implemented.
